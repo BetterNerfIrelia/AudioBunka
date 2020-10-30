@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>AudioBunkA</title>
+  <style>
+    body {
+      background-color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background-image: url('radios1.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    p {
+      color: black;
+      font-weight: 400;
+      margin-bottom: 0px;
+    }
+
+    input {
+      display: flex;
+    }
+
+    input[type=text] {
+      display: flex;
+    }
+
+    label {
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+
+    hr {
+      border-width: 2px;
+      border-color: black;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .uppercase {
+      text-transform: uppercase;
+
+    }
+
+    .form-control {
+      border: none;
+      outline: none;
+      border-bottom: 2px solid black;
+      border-radius: 0px;
+      font-size: 1.2rem;
+      background-color: #fbd838;
+    }
+
+    .form-control:active {
+      border: none;
+      outline: none;
+      border-bottom: 2px solid black;
+      border-radius: 0px;
+      font-size: 1.2rem;
+      background-color: #fbd838;
+    }
+
+    .form-control:focus {
+      border: none;
+      outline: none;
+      border-bottom: 2px solid black;
+      border-radius: 0px;
+      background-color: #fbd838;
+      font-size: 1.2rem;
+      box-shadow: none;
+    }
+
+    .btn-dark {
+      color: #fff;
+      background-color: #1d2124;
+      border-color: #171a1d;
+      font-size: 1.2rem;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    .btn-dark:focus {
+      box-shadow: none;
+    }
+
+    .btn-dark:hover {
+      color: #fff;
+      background-color: #394147;
+      border-color: #394147;
+    }
+
+    #logo {
+      height: 200px;
+      margin-bottom: 60px;
+    }
+
+    #container {
+      background-color: #fbd838;
+      border-radius: 10px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      padding-left: 60px;
+      padding-right: 60px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    #buttonContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 15px;
+    }
+
+    #socialContainer {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    #logoContainer {
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    #socialButton {
+      margin-right: 10px;
+      margin-bottom: 20px;
+    }
+
+    #contentContainer {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #contentIcon {
+      height: 60px;
+      padding-right: 20px;
+    }
+
+    #scissorsIcon {
+      height: 60px;
+    }
+
+    #factIcon {
+      height: 20px;
+      padding-right: 5px;
+    }
+
+    #sponsor {
+      height: 60px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    #thumb {
+      height: 40px;
+      margin-top: 20px;
+      visibility: hidden;
+    }
+
+    #header {
+      color: black;
+      font-weight: 500;
+      margin-bottom: 0px;
+      font-size: 1.3rem;
+    }
+
+    #countdown {
+      text-align: center;
+      font-size: 40px;
+      margin-top: 0px;
+    }
+
+    @media screen and (max-width: 1000px) {
+
+      label {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 2.5rem;
+      }
+
+      #header {
+        font-size: 3rem;
+      }
+
+      #logo {
+        height: 300px;
+      }
+
+      #contentIcon {
+        height: 120px;
+        margin-right: 10px;
+      }
+
+      #scissorsIcon {
+        height: 100px;
+        display: none;
+      }
+
+      #line {
+        display: none;
+      }
+
+      #socialImage {
+        width: 70px;
+      }
+
+      #container {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      #breaks {
+        display: none;
+      }
+
+      #factIcon {
+        height: 40px;
+      }
+
+      .btn-dark {
+        width: 50%;
+        height: 100px;
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="logoContainer">
+      <img id="logo" src="Audiobunka_TOTY_Logo.jpg"></img>
+      <!-- <p id="countdown"></p> -->
+    </div>
+    <div id="contentContainer">
+
+      <img id="contentIcon" src="vote.png" alt="vote">
+      <p>
+        Bestimme auch du mit, welcher Song der beste Vorarlberger Hip Hop Track des Jahres 2020 ist!<br>
+        Aus allen eingereichten Songs wird eine auserwählte Fachjury die 10 besten auswählen und<br id="breaks">
+        im Jänner für alle auf dieser Seite zum Online Voting freigeben!<br><br>
+      </p>
+    </div>
+    <div id="contentContainer">
+      <img id="contentIcon" src="show.png" alt="show">
+      <p>
+        Die 5 Songs mit den meisten Stimmen werden bei der Award Show am 26. Februar 2021 im Dornbirner Spielboden<br>
+        von den jeweiligen KünstlerInnen live performt und die besten drei davon mit Preisen ausgezeichnet.<br><br>
+      </p>
+    </div>
+    <div id="contentContainer">
+      <img id="contentIcon" src="vinyl.png" alt="vinyl">
+      <p>
+        Es warten exklusive Sachpreise im Wert von über 500 € auf die 5 FinalistInnen und eine goldene Schallplatte für
+        den/die SiegerIn.<br>
+        Als absolutes Sahnehäubchen erhält der/die GewinnerIn ein Konzert Slot bei der AudioBunkA Night beim Poolbar
+        Festival 2021.<br><br>
+      </p>
+    </div>
+    <br>
+    <p id="header">SHORT FACTS</p>
+    <p>
+      <img id="factIcon" src="check.png" alt="check">
+      Die hier ausgezeichneten KünstlerInnen sollten einen Vorarlberg Bezug haben,<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d. h. sie sind derzeit in Vorarlberg wohnhaft, und/oder in Vorarlberg
+      aufgewachsen.<br>
+      <img id="factIcon" src="check.png" alt="check">
+      Einreichphase der Songs von 01.11.2020 - 10.01.2021<br>
+      <img id="factIcon" src="check.png" alt="check">
+      Eine Fachjury wählt aus allen eingereichten Songs die 10 besten aus von 11.01.21 - 17.01.21<br>
+      <img id="factIcon" src="check.png" alt="check">
+      Online Voting der 10 besten Songs von 18.01.21 - 07.02.21<br>
+      <img id="factIcon" src="check.png" alt="check">
+      Award Show mit den 5 FinalistInnen am 26.02.21 im Dornbirner Spielboden<br>
+      <img id="factIcon" src="check.png" alt="check">
+      Gewinner/In erhält Konzert Slot bei der AudioBunkA Night beim Poolbar Festival im Sommer 2021<br>
+    </p>
+    <br>
+    <p>
+      Mehr Infos auf:
+    </p>
+    <div id="socialContainer">
+      <a id="socialButton" href="https://www.facebook.com/audiobunka/" target="_blank">
+        <img id="socialImage" src="facebook.png" width="40px" alt="facebook">
+      </a>
+      <br>
+      <a id="socialButton" href="https://www.instagram.com/audiobunka/" target="_blank">
+        <img id="socialImage" src="instagram.png" width="40px" alt="instagram">
+      </a>
+    </div>
+    <div id="contentContainer">
+      <p id="line" style="padding-top: 15px;">
+        ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      </p>
+      <img id="scissorsIcon" src="scissors.png" alt="scissors">
+    </div>
+    <br>
+    <!-- <form action="mailto:schiener5@hotmail.com" method="post" enctype="text/plain"> -->
+    <div class="form-group">
+      <label for="track">TRACK</label>
+      <input type="text" class="form-control" id="track" required>
+    </div>
+    <div class="form-group">
+      <label for="artist">ARTIST</label>
+      <input type="text" class="form-control" id="artist" required>
+    </div>
+    <div id="buttonContainer">
+      <div style="width: 40px;"></div>
+      <button type="submit" onClick="showThumb()" class="btn btn-dark">Vorschlag abschicken</button>
+      <img id="thumb" src="thumb.png"><img>
+    </div>
+    <!-- </form> -->
+    <div id="logoContainer">
+      <img id="sponsor" src="Logos/Neu/SPIELBODEN.png" style="height: 30px; margin-top: 5px;"><img>
+      <img id="sponsor" src="Logos/Neu/URBARNERIE.png" style="height: 50px;"><img>
+      <img id="sponsor" src="Logos/Neu/BONZAI.png"><img>
+      <img id="sponsor" src="Logos/Neu/POOLBAR.png"><img>
+      <img id="sponsor" src="Logos/Neu/HEMPIONS.png" style="height: 30px; margin-top: 5px;"><img>
+    </div>
+  </div>
+  <script>
+    function showThumb() {
+      document.getElementById('thumb').style.visibility = "visible";
+    }
+
+    var countDownDate = new Date("Jan 1, 2021 00:00:00").getTime();
+
+    var x = setInterval(function () {
+
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").innerHTML = "Abstimmung abgeschlossen";
+    }
+  }, 0);
+  </script>
+</body>
+
+</html>
