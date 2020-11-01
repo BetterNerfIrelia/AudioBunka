@@ -312,21 +312,21 @@
       <img id="scissorsIcon" src="scissors.png" alt="scissors">
     </div>
     <br>
-    <!-- <form> -->
+    <form action="insert.php" method="post">
     <div class="form-group">
       <label for="track">TRACK</label>
-      <input type="text" class="form-control" id="track" required>
+      <input type="text" class="form-control" id="track" name="track" required>
     </div>
     <div class="form-group">
       <label for="artist">ARTIST</label>
-      <input type="text" class="form-control" id="artist" required>
+      <input type="text" class="form-control" id="artist" name="artist" required>
     </div>
     <div id="buttonContainer">
       <div style="width: 40px;"></div>
-      <button type="submit" onClick="showThumb()" class="btn btn-dark">Vorschlag abschicken</button>
+      <button type="submit" value="Submit" onClick="showThumb()" class="btn btn-dark">Vorschlag abschicken</button>
       <img id="thumb" src="thumb.png"><img>
     </div>
-    <!-- </form> -->
+    </form>
     <div id="logoContainer">
       <img id="sponsor" src="Logos/Neu/SPIELBODEN.png" style="height: 30px; margin-top: 5px;"><img>
       <img id="sponsor" src="Logos/Neu/URBARNERIE.png" style="height: 50px;"><img>
@@ -339,27 +339,6 @@
     function showThumb() {
       document.getElementById('thumb').style.visibility = "visible";
     }
-
-    var countDownDate = new Date("Jan 1, 2021 00:00:00").getTime();
-
-    var x = setInterval(function () {
-
-    var now = new Date().getTime();
-    var distance = countDownDate - now;
-
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("countdown").innerHTML = "Abstimmung abgeschlossen";
-    }
-  }, 0);
   </script>
 </body>
 
